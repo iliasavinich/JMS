@@ -21,5 +21,6 @@ public class MessageConsumer {
     public void receiveMessage(String message){
         LOGGER.info("Received message ='{}'",message);
         latch.countDown();
+        latch.countDown();
     }
 }
