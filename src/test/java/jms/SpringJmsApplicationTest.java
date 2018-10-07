@@ -7,16 +7,17 @@ import org.apache.activemq.junit.EmbeddedActiveMQBroker;
 import org.junit.AfterClass;
 import org.junit.ClassRule;
 import org.junit.Test;
-import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.test.context.ConfigFileApplicationContextInitializer;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ConfigurableApplicationContext;
-import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.test.context.ContextConfiguration;
 
 import java.util.concurrent.TimeUnit;
 
-@RunWith(SpringRunner.class)
+
+
 @SpringBootApplication
 public class SpringJmsApplicationTest {
 
